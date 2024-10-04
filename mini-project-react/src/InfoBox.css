@@ -1,3 +1,27 @@
-.heading{
-    text-align: center;
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.search-box input {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
 }

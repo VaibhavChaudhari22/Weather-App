@@ -2,15 +2,32 @@
   max-width: 1280px; 
   margin: 0 auto;
   padding: 2rem;
-   /* text-align: center;  */
 }
 
-/* .logo {
-  /* height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-} */ 
+/* Optional: Background color for the body */
+body {
+  background-color: #e0f7fa; /* Light blue background for a fresh look */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Card styles to enhance InfoBox */
+.card {
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white; /* Ensure card stands out against background */
+}
+
+/* Add spacing and styles for search button */
+.SearchBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+/* Logo hover effect */
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -18,25 +35,34 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* Animation for logo */
 @keyframes logo-spin {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+      animation: logo-spin infinite 20s linear;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
+/* Styling for links or documentation text */
 .read-the-docs {
   color: #888;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  #root {
+      padding: 1rem;
+  }
+  .weather-container {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      align-items: center; /* Center align items */
+  }
 }
